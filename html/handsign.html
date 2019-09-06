@@ -6,6 +6,9 @@
 
   <script src="../lib/leap-0.6.4.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="../lib/leaptrainer.min.js"></script>
+  
+  <script src="../main/hand_sign_rec.js"></script>
 
   <script>
     function moveFinger(Finger, posX, posY, posZ) {
@@ -124,6 +127,10 @@
     </div>
   </header>
 
+  <div class="disp_circle">
+    <img class="circle" src="../img/circle.png">
+  </div>
+
   <div class="container">
     <div class="judg">
       <h1>にぎってから親指だけ立てて横にしてみよう！</h1>
@@ -150,9 +157,11 @@
     </div>
 
     <div class="btn-box">
-      <a href="practice_select.html" class="btn-square">もどる</a>
+      <a href="practice_select.html" class="btn-back">もどる</a>
     <div>
   </div>
+
+  <h1 id="sign_temp">?</h1>
 
 </body>
 </html>

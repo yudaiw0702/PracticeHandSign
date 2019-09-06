@@ -29,11 +29,12 @@ header {
 .judg {
   display: inline-block;
   background-color: #FFF;
-  width: 20%;
-  height: 20%;
+  width: 30%;
+  height: 30%;
   padding: 8px 18px;
   font-size: 13px;
   text-align: center;
+  margin-left: 5px;
 }
 
 .kon_img {
@@ -44,10 +45,12 @@ header {
 /*    ボタン    */
 .btn-box {
   text-align: center;
-  padding: 10px 250px;
+  padding-top: 50px;
+  position: relative;
+  right: 200px;
 }
 
-.btn-square {
+.btn-back {
   text-align: center;
   padding: 0.5em 1em;
   text-decoration: none;
@@ -58,12 +61,24 @@ header {
   margin: 10px;
 }
 
-.btn-square:active {
+.btn-back:active {
   /*ボタンを押したとき*/
   -webkit-transform: translateY(4px);
   transform: translateY(4px);/*下に動く*/
   border-bottom: none;/*線を消す*/
   margin: 10px;
+}
+
+/* 正解の丸 */
+.disp_circle{
+  font-size: 10px;
+}
+
+.circle {
+  display: none;
+  position: absolute;
+  width: 50%;
+  height: 50%;
 }
 
 /*   CSSヴィジュアライザー
@@ -83,7 +98,7 @@ button {
   position: absolute;
   width: 50%;
   height: 50%;
-  font-size: 200%;
+  font-size: 100%;
   overflow: hidden;
   background-color: #101010;
   -webkit-perspective: 1000;
@@ -164,8 +179,8 @@ button {
 
 .face {
   position: absolute;
-  width: 1em;
-  height: 1em;
+  width: 1.6em;
+  height: 1.6em;
   background-color: inherit;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -223,11 +238,11 @@ button {
   -webkit-transform: rotateY(90deg) translateX(-1em);
   -moz-transform: rotateY(90deg) translateX(-1em);
   transform: rotateY(90deg) translateX(-1em);
-  height: 3em;
+  height: 2em;
 }
 .finger .face.rt {
   -webkit-transform: rotateY(90deg) translateX(-1em) translateZ(1em);
   -moz-transform: rotateY(90deg) translateX(-1em) translateZ(1em);
   transform: rotateY(90deg) translateX(-1em) translateZ(1em);
-  height: 3em;
+  height: 2em;
 }
