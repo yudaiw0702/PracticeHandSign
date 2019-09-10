@@ -1,15 +1,43 @@
 $(function() {
 
+  let handsign_sw = "sw_a";
 
-  //指文字（あ）
-  function a (evt) {
-    $("#sign_temp").text("これは指文字の【あ】です");
-    $('.circle').css('display','inline');
-  }
+  switch(handsign_sw){
 
-  function a_miss1 (evt) {
-    $("#sign_temp").text("親指以外は閉じてください");
-    $('.circle').css('display','none');
+    case sw_a:　//指文字（あ）
+      function a (evt) {
+        $("#sign_temp").text("これは指文字の【あ】です");
+        $('.circle').css('display','inline');
+        setTimeout(function(){
+          //（い）に変更
+          $('.handsign_img').attr("src","../img/handsign/handsign_i.png")
+          $(".circle").css('display','none');
+          $(".handsign_text").text("小指だけたててみよう！");
+          handsign_sw = "sw_i";
+        }, 2000);
+      }
+
+      function a_miss1 (evt) {
+        $("#sign_temp").text("親指以外は閉じてください");
+        $('.circle').css('display','none');
+      }
+    break;
+
+    case sw_i:　//指文字（い）
+      function i (evt) {
+        $("#sign_temp").text("これは指文字の【い】です");
+        $('.circle').css('display','inline');
+        setTimeout(function(){
+          //（う）に変更
+          $('.handsign_img').attr("src","../img/handsign/handsign_u.png")
+          $(".circle").css('display','none');
+          $(".handsign_text").text("人差し指と中指だけたててみよう！");
+          handsign_sw = "sw_u";
+        }, 2000);
+      }
+    break;
+
+
   }
   
   var trainer = new LeapTrainer.Controller();
@@ -22,11 +50,19 @@ $(function() {
   //あ（閉じてないとき）
   trainer.fromJSON('{"name":"A_MISS1","pose":true,"data":[[{"x":0.16991152908541513,"y":-0.0111359823605286,"z":0.08131201308508629,"stroke":1},{"x":0.06044249390551987,"y":-0.004017526306156628,"z":0.08656621204297832,"stroke":1},{"x":-0.049026541274375446,"y":0.003100929748215346,"z":0.09182041100087024,"stroke":1},{"x":-0.1584955764542707,"y":0.010219385802587314,"z":0.09707460995876238,"stroke":1},{"x":-0.26796461163416596,"y":0.01733784185695956,"z":0.10232880891665441,"stroke":1},{"x":-0.3774336468140613,"y":0.024456297911331526,"z":0.10758300787454644,"stroke":1},{"x":0.6225663531859387,"y":-0.03996094665240853,"z":-0.5666850628788979,"stroke":1}]]}');
 
+  /*い（正解）*********************************************************/
+  trainer.fromJSON('{"name":"I","pose":true,"data":[[{"x":-0.15102441296657967,"y":-0.04756411232623103,"z":0.3472222222222222,"stroke":1},{"x":-0.1329014834105901,"y":-0.04185641884708319,"z":0.3055555555555556,"stroke":1},{"x":0.2839258963771698,"y":0.0894205311733142,"z":-0.6527777777777778,"stroke":1}]]}');
+  
+  
+  
   //trainer.fromJSON('');
   
-  //あいうえお
+  //あ
   trainer.on('A', a);
   trainer.on('A_MISS1', a_miss1);
+
+  //い
+  trainer.on('I', i);
 
   //かきくけこ
 
