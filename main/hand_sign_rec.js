@@ -1,47 +1,64 @@
 $(function() {
 
-  let handsign_sw = "sw_a";
+  function a (evt) {
+    $("#sign_temp").text("これは指文字の【あ】です");
+    $('.circle').css('display','inline');
+    setTimeout(function(){
+      //（い）に変更
+        $('.handsign_img').attr("src","../img/handsign/handsign_i.png")
+        $(".circle").css('display','none');
+        $(".handsign_text").text("小指だけたててみよう！");
+      }, 2000);
+    }
 
-  switch(handsign_sw){
+    function a_miss1 (evt) {
+      $("#sign_temp").text("親指以外は閉じてください");
+      $('.circle').css('display','none');
+    }
 
-    case sw_a:　//指文字（あ）
-      function a (evt) {
-        $("#sign_temp").text("これは指文字の【あ】です");
-        $('.circle').css('display','inline');
-        setTimeout(function(){
-          //（い）に変更
-          $('.handsign_img').attr("src","../img/handsign/handsign_i.png")
-          $(".circle").css('display','none');
-          $(".handsign_text").text("小指だけたててみよう！");
-          handsign_sw = "sw_i";
-        }, 2000);
-      }
+    function i (evt) {
+      $("#sign_temp").text("これは指文字の【い】です");
+      $('.circle').css('display','inline');
+      setTimeout(function(){
+        //（う）に変更
+        $('.handsign_img').attr("src","../img/handsign/handsign_u.png")
+        $(".circle").css('display','none');
+        $(".handsign_text").text("人差し指と中指だけたててみよう！");
+      }, 2000);
+    }
 
-      function a_miss1 (evt) {
-        $("#sign_temp").text("親指以外は閉じてください");
-        $('.circle').css('display','none');
-      }
-    break;
+    function u (evt) {
+      $("#sign_temp").text("これは指文字の【う】です");
+      $('.circle').css('display','inline');
+      setTimeout(function(){
+        //（え）に変更
+        $('.handsign_img').attr("src","../img/handsign/handsign_e.png")
+        $(".circle").css('display','none');
+        $(".handsign_text").text("人差し指と中指だけたててみよう！");
+      }, 2000);
+    }
 
-    case sw_i:　//指文字（い）
-      function i (evt) {
-        $("#sign_temp").text("これは指文字の【い】です");
-        $('.circle').css('display','inline');
-        setTimeout(function(){
-          //（う）に変更
-          $('.handsign_img').attr("src","../img/handsign/handsign_u.png")
-          $(".circle").css('display','none');
-          $(".handsign_text").text("人差し指と中指だけたててみよう！");
-          handsign_sw = "sw_u";
-        }, 2000);
-      }
-    break;
+    function e (evt) {
+      $("#sign_temp").text("これは指文字の【え】です");
+      $('.circle').css('display','inline');
+      setTimeout(function(){
+        //（お）に変更
+        $('.handsign_img').attr("src","../img/handsign/handsign_o.png")
+        $(".circle").css('display','none');
+        $(".handsign_text").text("人差し指と中指だけたててみよう！");
+      }, 2000);
+    }
 
+    function o (evt) {
+      $("#sign_temp").text("これは指文字の【お】です");
+      $('.circle').css('display','inline');
+      setTimeout(function(){
+        
+      }, 2000);
+    }
 
-  }
-  
   var trainer = new LeapTrainer.Controller();
-  
+
   /*幾何学テンプレートマッチング
   **************************************************************************************/
   
@@ -53,8 +70,16 @@ $(function() {
   /*い（正解）*********************************************************/
   trainer.fromJSON('{"name":"I","pose":true,"data":[[{"x":-0.15102441296657967,"y":-0.04756411232623103,"z":0.3472222222222222,"stroke":1},{"x":-0.1329014834105901,"y":-0.04185641884708319,"z":0.3055555555555556,"stroke":1},{"x":0.2839258963771698,"y":0.0894205311733142,"z":-0.6527777777777778,"stroke":1}]]}');
   
+  /*う（正解）*********************************************************/
+  trainer.fromJSON('{"name":"U","pose":true,"data":[[{"x":0.12395890810075694,"y":0.0927196936319662,"z":0.35508605089306894,"stroke":1},{"x":-0.0005949096567103851,"y":0.11251964846066964,"z":0.14757738694542327,"stroke":1},{"x":-0.12514872741417762,"y":0.1323196032893732,"z":-0.05993127700222234,"stroke":1},{"x":-0.24970254517164492,"y":0.15211955811807665,"z":-0.267439940949868,"stroke":1},{"x":-0.3742563629291122,"y":0.1719195129467802,"z":-0.4749486048975136,"stroke":1},{"x":0.6257436370708878,"y":-0.6615980164468657,"z":0.29965638501111186,"stroke":1}]]}');
+  trainer.fromJSON('{"name":"U2","pose":true,"data":[[{"x":0.0842065610621103,"y":-0.06658469514233624,"z":0.2839192040377816,"stroke":1},{"x":0.055265958886984434,"y":-0.05283438423887257,"z":0.2386935986540728,"stroke":1},{"x":0.026325356711858594,"y":-0.039084073335408906,"z":0.19346799327036424,"stroke":1},{"x":-0.16579787666095339,"y":0.1585031527166177,"z":-0.7160807959622184,"stroke":1}]]}');
   
-  
+  /*え（正解）*********************************************************/
+  trainer.fromJSON('{"name":"E","pose":true,"data":[[{"x":0.2102563632714452,"y":0.32129080602705296,"z":0.1145238088398246,"stroke":1},{"x":0.08666663612643943,"y":0.21508888977679963,"z":0.1168851926612765,"stroke":1},{"x":-0.036923091018566445,"y":0.10888697352654625,"z":0.1192465764827283,"stroke":1},{"x":-0.16051281816357219,"y":0.0026850572762929237,"z":0.12160796030418008,"stroke":1},{"x":-0.284102545308578,"y":-0.10351685897396043,"z":0.12396934412563188,"stroke":1},{"x":-0.4076922724535838,"y":-0.20971877522421378,"z":0.12633072794708378,"stroke":1},{"x":0.5923077275464161,"y":-0.33471609240851763,"z":-0.7225636103607247,"stroke":1}]]}');
+
+  /*お（正解）*********************************************************/
+  trainer.fromJSON('{"name":"O","pose":true,"data":[[{"x":0.41124784380023016,"y":-0.2562342272037038,"z":-0.057128872507781314,"stroke":1},{"x":0.28599885002678926,"y":-0.11860124869217376,"z":0.00829582677115237,"stroke":1},{"x":0.1607498562533486,"y":0.019031729819356302,"z":0.07372052605008617,"stroke":1},{"x":0.0355008624799078,"y":0.15666470833088675,"z":0.13914522532901985,"stroke":1},{"x":-0.08974813129353276,"y":0.2942976868424172,"z":0.20456992460795353,"stroke":1},{"x":-0.2149971250669736,"y":0.43193066535394775,"z":0.2699946238868871,"stroke":1},{"x":-0.5887521561997698,"y":-0.5270893144507299,"z":-0.6385972541373178,"stroke":1}]]}');
+
   //trainer.fromJSON('');
   
   //あ
@@ -64,6 +89,13 @@ $(function() {
   //い
   trainer.on('I', i);
 
-  //かきくけこ
+  //う
+  trainer.on('U', u);
+  trainer.on('U2', u);
 
+  //え
+  trainer.on('E', e);
+
+  //お
+  trainer.on('O', o);
 });
