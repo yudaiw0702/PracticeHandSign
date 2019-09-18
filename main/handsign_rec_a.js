@@ -2,15 +2,12 @@ $(function() {
 
   let stage = 'あ';
 
-  $(".handsign_text").text("にぎってから親指だけ立てて横にしてみよう！");
-  $('.handsign_img').attr("src","../img/handsign/handsign_a.png")
-
   function a (evt) {
     if(stage == 'あ'){
     $("#sign_temp").text("これは指文字の【あ】です");
     $('.circle').css('display','inline');
     setTimeout(function(){
-        $('.handsign_img').attr("src","../img/handsign/handsign_i.png")
+        $('.handsign_img').attr("src","../img/handsign/handsign_i.png");
         $(".circle").css('display','none');
         $(".handsign_text").text("小指だけたててみよう！");
         $("#sign_temp").text("？");
@@ -26,7 +23,7 @@ $(function() {
       $("#sign_temp").text("これは指文字の【い】です");
       $('.circle').css('display','inline');
       setTimeout(function(){
-        $('.handsign_img').attr("src","../img/handsign/handsign_u.png")
+        $('.handsign_img').attr("src","../img/handsign/handsign_u.png");
         $(".circle").css('display','none');
         $(".handsign_text").text("人差し指と中指だけたててみよう！");
         $("#sign_temp").text("？");
