@@ -7,7 +7,6 @@ $(function() {
     $("#sign_temp").text("これは指文字の【あ】です");
     $('.circle').css('display','inline');
     setTimeout(function(){
-      //（い）に変更
         $('.handsign_img').attr("src","../img/handsign/handsign_i.png")
         $(".circle").css('display','none');
         $(".handsign_text").text("小指だけたててみよう！");
@@ -15,7 +14,7 @@ $(function() {
         stage = 'い';
       }, 2000);
     }else{
-      $("#sign_temp").text("不正解");
+      $("#sign_temp").text("やりなおしてください");
     }
   }
 
@@ -24,7 +23,6 @@ $(function() {
       $("#sign_temp").text("これは指文字の【い】です");
       $('.circle').css('display','inline');
       setTimeout(function(){
-        //（う）に変更
         $('.handsign_img').attr("src","../img/handsign/handsign_u.png")
         $(".circle").css('display','none');
         $(".handsign_text").text("人差し指と中指だけたててみよう！");
@@ -32,7 +30,7 @@ $(function() {
         stage = 'う';
       }, 2000);
     }else{
-      $("#sign_temp").text("不正解");
+      $("#sign_temp").text("やりなおしてください");
     }
   }
 
@@ -41,7 +39,6 @@ $(function() {
       $("#sign_temp").text("これは指文字の【う】です");
       $('.circle').css('display','inline');
       setTimeout(function(){
-        //（え）に変更
         $('.handsign_img').attr("src","../img/handsign/handsign_e.png")
         $(".circle").css('display','none');
         $(".handsign_text").text("くまのポーズを取ろう！");
@@ -49,7 +46,7 @@ $(function() {
         stage = 'え';
       }, 2000);
     }else{
-      $("#sign_temp").text("不正解");
+      $("#sign_temp").text("やりなおしてください");
     }
   }
 
@@ -58,13 +55,14 @@ $(function() {
       $("#sign_temp").text("これは指文字の【え】です");
       $('.circle').css('display','inline');
       setTimeout(function(){
-        //（お）に変更
         $('.handsign_img').attr("src","../img/handsign/handsign_o.png")
         $(".circle").css('display','none');
         $(".handsign_text").text("輪っかを作ってみよう！");
         $("#sign_temp").text("？");
         stage = 'お';
       }, 2000);
+    }else{
+      $("#sign_temp").text("やりなおしてください");
     }
   }
 
@@ -75,6 +73,8 @@ $(function() {
       setTimeout(function(){
         $("#sign_temp").text("？");
       }, 2000);
+    }else{
+      $("#sign_temp").text("やりなおしてください");
     }
   }
 
