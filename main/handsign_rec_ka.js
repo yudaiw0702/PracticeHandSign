@@ -41,7 +41,7 @@ $(function() {
       setTimeout(function(){
         $('.handsign_img').attr("src","../img/handsign/handsign_ke.png");
         $(".circle").css('display','none');
-        $(".handsign_text").text("指を立てて親指だけ閉じよう！");
+        $(".handsign_text").text("！");
         $("#sign_temp").text("？");
         stage = 'け';
       }, 2000);
