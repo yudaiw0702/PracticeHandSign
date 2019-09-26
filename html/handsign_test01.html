@@ -9,6 +9,7 @@
   <script src="lib/three.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="lib/leaptrainer.min.js"></script>
+  <script src="../lib/hand_display.js"></script>
 
   <link rel="stylesheet" type="text/css" href="../css/handsign_test.css">
 </head>
@@ -22,12 +23,37 @@
     </div>
   </header>
 
-  <div class="character">
-    <img src="../img/usagi_01.png">
+  <div class="balloon">
+    <div class="balloon1-left">
+      <p>こんにちは。これは例です。</p>
+    </div>
+    <div class="balloon1-right">
+      <p>こんにちは。これは例です。</p>
+    </div>
   </div>
 
-  <div class="balloon1-left">
-      <p>こんにちは。これは例です。</p>
+  <div class="characters">
+    <img class="rabbit" src="../img/usagi_01.png">
+
+    <div id="app" class="show-hands">
+      <div id="scene">
+        <div id="finger" class="cube finger">
+          <div class="face tp"></div>
+          <div class="face lt"></div>
+          <div class="face rt"></div>
+          <div class="face ft"></div>
+          <div class="face bk"></div>
+        </div>
+        <div id="sphere" class="cube sphere">
+          <div class="face tp"></div>
+          <div class="face lt"></div>
+          <div class="face rt"></div>
+          <div class="face ft"></div>
+          <div class="face bk"></div>
+        </div>
+      </div>
+    </div>
+  
   </div>
   
 </body>
