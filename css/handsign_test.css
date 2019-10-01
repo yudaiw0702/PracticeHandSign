@@ -267,6 +267,7 @@ button {
   display: inline-block;
   margin: 1.5em 0 1.5em 15px;
   padding: 7px 10px;
+  top: 500px;
   min-width: 120px;
   max-width: 100%;
   color: #555;
@@ -294,6 +295,7 @@ button {
   display: inline-block;
   margin: 1.5em 15px 1.5em 0;
   padding: 7px 10px;
+  top: 550px;
   min-width: 120px;
   max-width: 100%;
   color: #555;
@@ -314,4 +316,18 @@ button {
 .balloon1-right p {
   margin: 0;
   padding: 0;
+}
+
+/* 吹き出しのアニメーション */
+.animation-left {
+  transition-duration: 1000ms;
+}
+
+.animation-right {
+  transition-duration: 1000ms;
+  transition-delay: 500ms;
+}
+
+.balloon_up {
+  transform: translateY(-400px);
 }
