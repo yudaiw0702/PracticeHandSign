@@ -7,7 +7,7 @@ $(function() {
     $("#sign_temp").text("これは指文字の【さ】です");
     $('.circle').css('display','inline');
     setTimeout(function(){
-        $('.handsign_img').attr("src","../img/handsign/handsign_si.png")
+        $('.handsign_img').attr("src","../img/handsign/hs_si.jpg")
         $(".circle").css('display','none');
         $(".handsign_text").text("鉄砲を打つまねをしてみよう！");
         $("#sign_temp").text("？");
@@ -23,7 +23,7 @@ $(function() {
       $("#sign_temp").text("これは指文字の【し】です");
       $('.circle').css('display','inline');
       setTimeout(function(){
-        $('.handsign_img').attr("src","../img/handsign/handsign_su.png")
+        $('.handsign_img').attr("src","../img/handsign/hs_su.jpg")
         $(".circle").css('display','none');
         $(".handsign_text").text("さっき手で作った鉄砲を下に向けてみよう！");
         $("#sign_temp").text("？");
@@ -39,7 +39,7 @@ $(function() {
       $("#sign_temp").text("これは指文字の【す】です");
       $('.circle').css('display','inline');
       setTimeout(function(){
-        $('.handsign_img').attr("src","../img/handsign/handsign_se.png")
+        $('.handsign_img').attr("src","../img/handsign/hs_se.jpg")
         $(".circle").css('display','none');
         $(".handsign_text").text("中指を立ててみよう！");
         $("#sign_temp").text("？");
@@ -55,7 +55,7 @@ $(function() {
       $("#sign_temp").text("これは指文字の【せ】です");
       $('.circle').css('display','inline');
       setTimeout(function(){
-        $('.handsign_img').attr("src","../img/handsign/handsign_so.png")
+        $('.handsign_img').attr("src","../img/handsign/hs_so.jpg")
         $(".circle").css('display','none');
         $(".handsign_text").text("人差し指で指してみよう！");
         $("#sign_temp").text("？");
@@ -80,7 +80,7 @@ $(function() {
 
   $('#btn-sign-next').on('click', function() {
     if(stage == さ){
-      $('.handsign_img').attr("src","../img/handsign/handsign_si.png")
+      $('.handsign_img').attr("src","../img/handsign/hs_si.jpg")
       $(".circle").css('display','none');
       $(".handsign_text").text("鉄砲を打つまねをしてみよう！");
       $("#sign_temp").text("？");

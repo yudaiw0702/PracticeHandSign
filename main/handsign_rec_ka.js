@@ -7,7 +7,7 @@ $(function() {
     $("#sign_temp").text("これは指文字の【か】です");
     $('.circle').css('display','inline');
     setTimeout(function(){
-        $('.handsign_img').attr("src","../img/handsign/handsign_ki.png");
+        $('.handsign_img').attr("src","../img/handsign/hs_ki.jpg");
         $(".circle").css('display','none');
         $(".handsign_text").text("手できつねを作ってみよう！");
         $("#sign_temp").text("？");
@@ -23,7 +23,7 @@ $(function() {
       $("#sign_temp").text("これは指文字の【き】です");
       $('.circle').css('display','inline');
       setTimeout(function(){
-        $('.handsign_img').attr("src","../img/handsign/handsign_ku.png");
+        $('.handsign_img').attr("src","../img/handsign/hs_ku.jpg");
         $(".circle").css('display','none');
         $(".handsign_text").text("手を伸ばして横にしよう！");
         $("#sign_temp").text("？");
@@ -39,7 +39,7 @@ $(function() {
       $("#sign_temp").text("これは指文字の【く】です");
       $('.circle').css('display','inline');
       setTimeout(function(){
-        $('.handsign_img').attr("src","../img/handsign/handsign_ke.png");
+        $('.handsign_img').attr("src","../img/handsign/hs_ke.jpg");
         $(".circle").css('display','none');
         $(".handsign_text").text("！");
         $("#sign_temp").text("？");
@@ -55,7 +55,7 @@ $(function() {
       $("#sign_temp").text("これは指文字の【け】です");
       $('.circle').css('display','inline');
       setTimeout(function(){
-        $('.handsign_img').attr("src","../img/handsign/handsign_ko.png");
+        $('.handsign_img').attr("src","../img/handsign/hs_ko.jpg");
         $(".circle").css('display','none');
         $(".handsign_text").text("輪っかを作ってみよう！");
         $("#sign_temp").text("？");
@@ -80,25 +80,25 @@ $(function() {
 
   $('.btn-sign-next').on('click', function() {
     if(stage == 'か'){
-      $('.handsign_img').attr("src","../img/handsign/handsign_ki.png");
+      $('.handsign_img').attr("src","../img/handsign/hs_ki.jpg");
       $(".circle").css('display','none');
       $(".handsign_text").text("手できつねを作ってみよう！");
       $("#sign_temp").text("？");
       stage = 'き';
     }else if(stage == 'き'){
-      $('.handsign_img').attr("src","../img/handsign/handsign_ku.png");
+      $('.handsign_img').attr("src","../img/handsign/hs_ku.jpg");
       $(".circle").css('display','none');
       $(".handsign_text").text("手を伸ばして横にしよう！");
       $("#sign_temp").text("？");
       stage = 'く';
     }else if(stage == 'く'){
-      $('.handsign_img').attr("src","../img/handsign/handsign_ke.png");
+      $('.handsign_img').attr("src","../img/handsign/hs_ke.jpg");
       $(".circle").css('display','none');
       $(".handsign_text").text("！");
       $("#sign_temp").text("？");
       stage = 'け';
     }else if(stage == 'け'){
-      $('.handsign_img').attr("src","../img/handsign/handsign_ko.png");
+      $('.handsign_img').attr("src","../img/handsign/hs_ko.jpg");
       $(".circle").css('display','none');
       $(".handsign_text").text("輪っかを作ってみよう！");
       $("#sign_temp").text("？");

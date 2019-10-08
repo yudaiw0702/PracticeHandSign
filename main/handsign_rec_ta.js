@@ -7,7 +7,7 @@ $(function() {
     $("#sign_temp").text("これは指文字の【か】です");
     $('.circle').css('display','inline');
     setTimeout(function(){
-        $('.handsign_img').attr("src","../img/handsign/handsign_i.png")
+        $('.handsign_img').attr("src","../img/handsign/hs_i.jpg")
         $(".circle").css('display','none');
         $(".handsign_text").text("小指だけたててみよう！");
         $("#sign_temp").text("？");
@@ -23,7 +23,7 @@ $(function() {
       $("#sign_temp").text("これは指文字の【い】です");
       $('.circle').css('display','inline');
       setTimeout(function(){
-        $('.handsign_img').attr("src","../img/handsign/handsign_u.png")
+        $('.handsign_img').attr("src","../img/handsign/hs_u.jpg")
         $(".circle").css('display','none');
         $(".handsign_text").text("人差し指と中指だけたててみよう！");
         $("#sign_temp").text("？");
@@ -39,7 +39,7 @@ $(function() {
       $("#sign_temp").text("これは指文字の【う】です");
       $('.circle').css('display','inline');
       setTimeout(function(){
-        $('.handsign_img').attr("src","../img/handsign/handsign_e.png")
+        $('.handsign_img').attr("src","../img/handsign/hs_e.jpg")
         $(".circle").css('display','none');
         $(".handsign_text").text("くまのポーズを取ろう！");
         $("#sign_temp").text("？");
@@ -55,7 +55,7 @@ $(function() {
       $("#sign_temp").text("これは指文字の【え】です");
       $('.circle').css('display','inline');
       setTimeout(function(){
-        $('.handsign_img').attr("src","../img/handsign/handsign_o.png")
+        $('.handsign_img').attr("src","../img/handsign/hs_o.jpg")
         $(".circle").css('display','none');
         $(".handsign_text").text("輪っかを作ってみよう！");
         $("#sign_temp").text("？");
