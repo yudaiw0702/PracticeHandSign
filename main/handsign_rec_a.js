@@ -78,6 +78,37 @@ $(function() {
     }
   }
 
+  $('.btn-sign-next').on('click', function() {
+    if(stage == 'あ'){
+      $('.handsign_img').attr("src","../img/handsign/handsign_i.png");
+      $(".circle").css('display','none');
+      $(".handsign_text").text("小指だけたててみよう！");
+      $("#sign_temp").text("？");
+      stage = 'い';
+    }else if(stage == 'い'){
+      $('.handsign_img').attr("src","../img/handsign/handsign_u.png");
+      $(".circle").css('display','none');
+      $(".handsign_text").text("人差し指と中指だけたててみよう！");
+      $("#sign_temp").text("？");
+      stage = 'う';
+    }else if(stage == 'う'){
+      $('.handsign_img').attr("src","../img/handsign/handsign_e.png")
+      $(".circle").css('display','none');
+      $(".handsign_text").text("くまのポーズを取ろう！");
+      $("#sign_temp").text("？");
+      stage = 'え';
+    }else if(stage == 'え'){
+      $('.handsign_img').attr("src","../img/handsign/handsign_o.png");
+      $(".circle").css('display','none');
+      $(".handsign_text").text("輪っかを作ってみよう！");
+      $("#sign_temp").text("？");
+      stage = 'お';
+    }else if(stage == 'お'){
+
+    }
+  });
+
+
   var trainer = new LeapTrainer.Controller();
 
   /*幾何学テンプレートマッチング

@@ -78,6 +78,16 @@ $(function() {
     }
   }
 
+  $('#btn-sign-next').on('click', function() {
+    if(stage == さ){
+      $('.handsign_img').attr("src","../img/handsign/handsign_si.png")
+      $(".circle").css('display','none');
+      $(".handsign_text").text("鉄砲を打つまねをしてみよう！");
+      $("#sign_temp").text("？");
+      stage = 'し';
+    }
+  });
+
   var trainer = new LeapTrainer.Controller();
 
   /*幾何学テンプレートマッチング
