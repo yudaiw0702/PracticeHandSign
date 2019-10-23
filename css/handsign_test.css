@@ -335,3 +335,69 @@ button {
 .balloon_up {
   transform: translateY(-400px);
 }
+
+/*    ボタン    */
+.btn-box {
+  text-align: center;
+  padding-top: 50px;
+  position: relative;
+  right: 190px;
+  top: 30px;
+}
+
+.btn-back {
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.btn-back:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+  margin: 10px;
+}
+
+.btn-next {
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.btn-next:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+  margin: 10px;
+}
+
+.btn-sign-next {
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.btn-sign-next:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+  margin: 10px;
+}
