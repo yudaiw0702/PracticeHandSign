@@ -251,7 +251,11 @@ button {
 
   width: 25%;
   height: 45%;
+}
 
+/* 問題 */
+.question {
+  position: absolute;
 }
 
 /* 吹き出しの位置 */
