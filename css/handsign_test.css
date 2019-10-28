@@ -26,6 +26,18 @@ header {
   margin: 0 auto;
 }
 
+/* 正解の丸 */
+.disp_circle{
+  font-size: 10px;
+}
+
+.circle {
+  display: none;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+
 /*   CSSヴィジュアライザー
 ************************************************/
 *,*:before,*:after {
@@ -258,7 +270,8 @@ button {
   display: inline-block;
   margin: 1.5em 15px 1.5em 0;
   padding: 7px 10px;
-  top: 550px;
+  top: 500px;
+  left: -80px;
   min-width: 120px;
   max-width: 100%;
   color: #555;
