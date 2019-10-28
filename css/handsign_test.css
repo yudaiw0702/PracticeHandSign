@@ -34,8 +34,10 @@ header {
 .circle {
   display: none;
   position: absolute;
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 45%;
+  top: 120px;
+  left: 180px;
 }
 
 /*   CSSヴィジュアライザー

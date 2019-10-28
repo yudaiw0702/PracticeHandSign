@@ -4,12 +4,11 @@ $(function() {
   let $balloon_right = $(".balloon1-right");
 
   $balloon_left.toggleClass("balloon_up");
-  $balloon_right.toggleClass("balloon_up");
 
   function konnitiwa1 (evt) {
-    
+    $balloon_right.toggleClass("balloon_up");
     setTimeout(function(){
-      $(".circle").css('display','none');
+      $(".circle").css('display','inline');
     }, 2000);
   }
   
