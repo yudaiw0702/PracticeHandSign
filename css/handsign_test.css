@@ -40,6 +40,12 @@ header {
   left: 180px;
 }
 
+.check_sign {
+  position: absolute;
+  top: 120px;
+  right: 200px;
+}
+
 /*   CSSヴィジュアライザー
 ************************************************/
 *,*:before,*:after {

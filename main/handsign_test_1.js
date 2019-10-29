@@ -2,16 +2,27 @@ $(function() {
 
   let $balloon_left = $(".balloon1-left");
   let $balloon_right = $(".balloon1-right");
+  let hello_switch = 0;
 
   $balloon_left.toggleClass("balloon_up");
 
   function konnitiwa1 (evt) {
-    $balloon_right.toggleClass("balloon_up");
-    setTimeout(function(){
-      $(".circle").css('display','inline');
-    }, 2000);
+    hello_switch = 1;
+    $('.check_sign').text("こん？");
   }
-  
+
+  function konnitiwa2 (evt) {
+    if(hello_switch == 1){
+      $('.check_sign').text("こんにちは");
+      $balloon_right.toggleClass("balloon_up");
+      hello_switch = 0;
+      setTimeout(function(){
+        $(".circle").css('display','inline');
+        $('.check_sign').text("?");
+      }, 2000);
+    };
+  }
+
   var trainer = new LeapTrainer.Controller();
 
   //こんにちはのこんにの動作
