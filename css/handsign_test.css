@@ -342,7 +342,7 @@ button {
   margin: 10px;
 }
 
-.btn-next {
+.open-modal-hint {
   text-align: center;
   padding: 0.5em 1em;
   text-decoration: none;
@@ -353,7 +353,7 @@ button {
   margin: 10px;
 }
 
-.btn-next:active {
+.open-modal-hint:active {
   /*ボタンを押したとき*/
   -webkit-transform: translateY(4px);
   transform: translateY(4px);/*下に動く*/
@@ -378,4 +378,28 @@ button {
   transform: translateY(4px);/*下に動く*/
   border-bottom: none;/*線を消す*/
   margin: 10px;
+}
+
+/*モーダル表示*/
+.modal{
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.modal__bg{
+  background: rgba(0,0,0,0.8);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+.modal__content{
+  background: #fff;
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
 }

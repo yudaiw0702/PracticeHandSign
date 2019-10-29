@@ -17,11 +17,22 @@ $(function() {
       $balloon_right.toggleClass("balloon_up");
       hello_switch = 0;
       setTimeout(function(){
+        $('.question').text("”次へ”を押して指文字のテストをしよう！")
         $(".circle").css('display','inline');
         $('.check_sign').text("?");
       }, 2000);
     };
   }
+
+  /*モーダル表示*/
+  $('.open-modal-hint').on('click',function(){
+    $('.js-modal').fadeIn();
+    return false;
+  });
+  $('.js-modal-close').on('click',function(){
+    $('.js-modal').fadeOut();
+    return false;
+  });
 
   var trainer = new LeapTrainer.Controller();
 

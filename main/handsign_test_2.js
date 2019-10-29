@@ -14,6 +14,8 @@ $(function() {
     $balloon_right.toggleClass("balloon_up");
     if(stage == "あ"){
       call_a();
+    }else{
+      resign();
     }
   }
 
@@ -23,6 +25,8 @@ $(function() {
     $balloon_right.toggleClass("balloon_up");
     if(stage == "い"){
       call_i();
+    }else{
+      resign();
     }
   }
 
@@ -32,6 +36,8 @@ $(function() {
     $balloon_right.toggleClass("balloon_up");
     if(stage == "く"){
       call_ku();
+    }else{
+      resign();
     }
   }
 
@@ -41,6 +47,8 @@ $(function() {
     $balloon_right.toggleClass("balloon_up");
     if(stage == "し"){
       call_si();
+    }else{
+      resign();
     }
   }
 
@@ -50,6 +58,8 @@ $(function() {
     $balloon_right.toggleClass("balloon_up");
     if(stage == "せ"){
       call_se();
+    }else{
+      resign();
     }
   }
 
@@ -59,6 +69,8 @@ $(function() {
     $balloon_right.toggleClass("balloon_up");
     if(stage == "か"){
       call_ka();
+    }else{
+      resign();
     }
   }
 
@@ -152,6 +164,14 @@ $(function() {
       stage = 'end';
     }, 2000);
   };
+
+  function resign(){
+    $('.question').text("もう一度！")
+    setTimeout(function(){
+      $balloon_right.toggleClass("balloon_up");
+      $('.question').text("うさぎと同じ文字を返そう！")
+    }, 2000);
+  }
 
   var trainer = new LeapTrainer.Controller();
 
