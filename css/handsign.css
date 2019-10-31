@@ -147,7 +147,7 @@ button {
   font-size: 100%;
   overflow: hidden;
   background-color: #101010;
-  -webkit-perspective: 1000;
+  /* -webkit-perspective: 1000; */
 }
 #scene,
 #scene:before {
