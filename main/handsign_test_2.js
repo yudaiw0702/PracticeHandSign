@@ -19,45 +19,45 @@ $(function() {
     }
   }
 
-  function i (evt) {
-    $('.check_sign').text("い");
-    $('.balloon1-right').text("い");
+  function nu (evt) {
+    $('.check_sign').text("ぬ");
+    $('.balloon1-right').text("ぬ");
     $balloon_right.toggleClass("balloon_up");
-    if(stage == "い"){
-      call_i();
+    if(stage == "ぬ"){
+      call_nu();
     }else{
       resign();
     }
   }
 
-  function ku (evt) {
-    $('.check_sign').text("く");
-    $('.balloon1-right').text("く");
+  function ha (evt) {
+    $('.check_sign').text("は");
+    $('.balloon1-right').text("は");
     $balloon_right.toggleClass("balloon_up");
-    if(stage == "く"){
-      call_ku();
+    if(stage == "は"){
+      call_ha();
     }else{
       resign();
     }
   }
 
-  function si (evt) {
-    $('.check_sign').text("し");
-    $('.balloon1-right').text("し");
+  function e (evt) {
+    $('.check_sign').text("え");
+    $('.balloon1-right').text("え");
     $balloon_right.toggleClass("balloon_up");
-    if(stage == "し"){
-      call_si();
+    if(stage == "え"){
+      call_e();
     }else{
       resign();
     }
   }
 
-  function ko (evt) {
-    $('.check_sign').text("こ");
-    $('.balloon1-right').text("こ");
+  function me (evt) {
+    $('.check_sign').text("め");
+    $('.balloon1-right').text("め");
     $balloon_right.toggleClass("balloon_up");
-    if(stage == "こ"){
-      call_ko();
+    if(stage == "め"){
+      call_me();
     }else{
       resign();
     }
@@ -67,14 +67,14 @@ $(function() {
   $('.btn-change').on('click', function(){
     if(stage == 'あ'){
       call_a();
-    }else if(stage == 'こ'){
-      call_ko();
-    }else if(stage == 'く'){
-      call_ku();
-    }else if(stage == 'し'){
-      call_si();
-    }else if(stage == 'い'){
-      call_i();
+    }else if(stage == 'ぬ'){
+      call_nu();
+    }else if(stage == 'は'){
+      call_ha();
+    }else if(stage == 'え'){
+      call_e();
+    }else if(stage == 'め'){
+      call_me();
     }
   });
 
@@ -83,55 +83,55 @@ $(function() {
     setTimeout(function(){
       $(".circle").css('display','inline');
       $('.check_sign').text("?");
-      stage = 'こ';
+      stage = 'ぬ';
       setTimeout(function(){
         $balloon_right.toggleClass("balloon_up");
         $(".circle").css('display','none');
-        $('.balloon1-left').text("こ");
+        $('.balloon1-left').text("ぬ");
       }, 2000);
     }, 2000);
   };
 
-  function call_ko(){
+  function call_nu(){
     setTimeout(function(){
       $(".circle").css('display','inline');
       $('.check_sign').text("?");
-      stage = 'く';
+      stage = 'は';
       setTimeout(function(){
         $balloon_right.toggleClass("balloon_up");
         $(".circle").css('display','none');
-        $('.balloon1-left').text("く");
+        $('.balloon1-left').text("は");
       }, 2000);
     }, 2000);
   };
 
-  function call_ku(){
+  function call_ha(){
     setTimeout(function(){
       $(".circle").css('display','inline');
       $('.check_sign').text("?");
-      stage = 'し';
+      stage = 'え';
       setTimeout(function(){
         $balloon_right.toggleClass("balloon_up");
         $(".circle").css('display','none');
-        $('.balloon1-left').text("し");
+        $('.balloon1-left').text("え");
       }, 2000);
     }, 2000);
   };
 
-  function call_si(){
+  function call_e(){
     setTimeout(function(){
       $(".circle").css('display','inline');
       $('.check_sign').text("?");
-      stage = 'い';
+      stage = 'め';
       setTimeout(function(){
         $balloon_right.toggleClass("balloon_up");
         $(".circle").css('display','none');
-        $('.balloon1-left').text("い");
+        $('.balloon1-left').text("め");
       }, 2000);
     }, 2000);
   };
 
-  function call_i(){
+  function call_me(){
     setTimeout(function(){
       $(".circle").css('display','inline');
       $('.check_sign').text("?");
@@ -155,30 +155,20 @@ $(function() {
 
   var trainer = new LeapTrainer.Controller();
 
-  trainer.fromJSON('{"name":"A","pose":true,"data":[[{"x":0.3472222222222222,"y":-0.0279254653691038,"z":0.012245538195029528,"stroke":1},{"x":0.3055555555555556,"y":-0.024574409524811488,"z":0.010776073611625997,"stroke":1},{"x":-0.6527777777777778,"y":0.05249987489391529,"z":-0.023021611806655518,"stroke":1}]]}');
+  trainer.fromJSON('{"name":"A","pose":true,"data":[[{"x":0.3472222222222222,"y":0.0026479955169245346,"z":0.024720609802506024,"stroke":1},{"x":0.3055555555555556,"y":0.0023302360548935674,"z":0.02175413662620529,"stroke":1},{"x":-0.6527777777777778,"y":-0.004978231571818103,"z":-0.0464747464287113,"stroke":1}]]}');
 
-  trainer.fromJSON('{"name":"I","pose":true,"data":[[{"x":-0.15102441296657967,"y":-0.04756411232623103,"z":0.3472222222222222,"stroke":1},{"x":-0.1329014834105901,"y":-0.04185641884708319,"z":0.3055555555555556,"stroke":1},{"x":0.2839258963771698,"y":0.0894205311733142,"z":-0.6527777777777778,"stroke":1}]]}');
-  trainer.fromJSON('{"name":"I2","pose":true,"data":[[{"x":-0.2593489912555588,"y":0.05268358738965655,"z":0.3472222222222222,"stroke":1},{"x":-0.22822711230489176,"y":0.046361556902897574,"z":0.3055555555555556,"stroke":1},{"x":0.4875761035604505,"y":-0.09904514429255411,"z":-0.6527777777777778,"stroke":1}]]}');
+  trainer.fromJSON('{"name":"NU","pose":true,"data":[[{"x":0.32420316272692307,"y":-0.1078762317893186,"z":-0.04206775330242701,"stroke":1},{"x":0.19003773439054483,"y":0.06316611920474724,"z":-0.06937699445138397,"stroke":1},{"x":0.0558723060541666,"y":0.2342084701988132,"z":-0.09668623560034094,"stroke":1},{"x":-0.07829312228221164,"y":0.40525082119287903,"z":-0.123995476749298,"stroke":1},{"x":-0.49182008088942275,"y":-0.594749178807121,"z":0.3321264601034499,"stroke":1}]]}');
   
-  trainer.fromJSON('{"name":"KU","pose":true,"data":[[{"x":0.25492136490809914,"y":-0.08363889226236315,"z":0.033468302922396886,"stroke":1},{"x":0.24835954503063362,"y":-0.033365150249834066,"z":-0.02385445951274004,"stroke":1},{"x":0.241797725153168,"y":0.01690859176269502,"z":-0.08117722194787694,"stroke":1},{"x":-0.7450786350919009,"y":0.10009545074950221,"z":0.07156337853822006,"stroke":1}]]}');
+  trainer.fromJSON('{"name":"HA","pose":true,"data":[[{"x":0.29199513450252024,"y":-0.2569230170419302,"z":-0.3885153025327925,"stroke":1},{"x":0.11457382554362017,"y":-0.10406636445319206,"z":-0.255406121013117,"stroke":1},{"x":-0.06284748341527979,"y":0.04879028813554609,"z":-0.1222969394934415,"stroke":1},{"x":-0.2402687923741797,"y":0.20164694072428424,"z":0.010812242026233987,"stroke":1},{"x":-0.4176901013330796,"y":0.3545035933130224,"z":0.14392142354590948,"stroke":1},{"x":0.31423741707639874,"y":-0.24395144067773047,"z":0.6114846974672075,"stroke":1}]]}');
 
-  trainer.fromJSON('{"name":"SI","pose":true,"data":[[{"x":0.22990425344236198,"y":-0.1219231828257094,"z":0.009117852655827742,"stroke":1},{"x":0.20498404224039368,"y":-0.06531031414337701,"z":-0.010211217383167333,"stroke":1},{"x":0.18006383103842527,"y":-0.008697445461044631,"z":-0.0295402874221624,"stroke":1},{"x":0.15514361983645708,"y":0.047915423221287765,"z":-0.04886935746115746,"stroke":1},{"x":-0.770095746557638,"y":0.14801551920884332,"z":0.07950300961065947,"stroke":1}]]}');
-  trainer.fromJSON('{"name":"SI2","pose":true,"data":[[{"x":-0.01978248025470069,"y":-0.2454746787449836,"z":0.21604514066723662,"stroke":1},{"x":-0.0066570891031552115,"y":-0.14181144020438027,"z":0.09042934143370368,"stroke":1},{"x":0.006468302048390273,"y":-0.03814820166377694,"z":-0.035186457799829096,"stroke":1},{"x":0.019593693199935758,"y":0.06551503687682639,"z":-0.16080225703336187,"stroke":1},{"x":0.03271908435148124,"y":0.16917827541742972,"z":-0.28641805626689465,"stroke":1},{"x":0.04584447550302673,"y":0.27284151395803335,"z":-0.4120338555004274,"stroke":1},{"x":-0.07818598574497804,"y":-0.08210050563914872,"z":0.5879661444995725,"stroke":1}]]}');
+  trainer.fromJSON('{"name":"E","pose":true,"data":[[{"x":0.2308932839481646,"y":0.21231784994449218,"z":0.2579016342832713,"stroke":1},{"x":0.10008063456630706,"y":0.1335276754939234,"z":0.2011384269820372,"stroke":1},{"x":-0.0307320148155506,"y":0.054737501043354536,"z":0.14437521968080302,"stroke":1},{"x":-0.1615446641974082,"y":-0.024052673407214287,"z":0.08761201237956895,"stroke":1},{"x":-0.29235731357926587,"y":-0.10284284785778312,"z":0.030848805078334873,"stroke":1},{"x":-0.42316996296112347,"y":-0.18163302230835196,"z":-0.02591440222289909,"stroke":1},{"x":0.5768300370388766,"y":-0.09205448290842058,"z":-0.6959616961811163,"stroke":1}]]}');
   
-  trainer.fromJSON('{"name":"KO","pose":true,"data":[[{"x":0.2990812304063072,"y":-0.34722222222222215,"z":0.0478961353219315,"stroke":1},{"x":0.26319148275755033,"y":-0.3055555555555555,"z":0.042148599083299695,"stroke":1},{"x":-0.5622727131638575,"y":0.6527777777777779,"z":-0.09004473440523116,"stroke":1}]]}');
-  trainer.fromJSON('{"name":"KO2","pose":true,"data":[[{"x":0.323307169793817,"y":-0.19771834756455386,"z":0.012874427588242976,"stroke":1},{"x":0.2390971572233691,"y":-0.08351166464102266,"z":0.019337850617779012,"stroke":1},{"x":0.15488714465292108,"y":0.030695018282508424,"z":0.02580127364731505,"stroke":1},{"x":0.07067713208247306,"y":0.14490170120603962,"z":0.03226469667685106,"stroke":1},{"x":-0.013532880487974741,"y":0.2591083841295707,"z":0.03872811970638709,"stroke":1},{"x":-0.09774289305842276,"y":0.3733150670531019,"z":0.045191542735923074,"stroke":1},{"x":-0.676692830206183,"y":-0.5267901584656443,"z":-0.17419791097249823,"stroke":1}]]}');
+  trainer.fromJSON('{"name":"ME","pose":true,"data":[[{"x":0.27433647700194674,"y":-0.10295673167124908,"z":0.11379968004141305,"stroke":1},{"x":0.15801107702422307,"y":-0.05936720822414197,"z":0.12396979202691849,"stroke":1},{"x":0.04168567704649939,"y":-0.015777684777034853,"z":0.13413990401242393,"stroke":1},{"x":-0.07463972293122437,"y":0.02781183867007228,"z":0.14431001599792947,"stroke":1},{"x":-0.19096512290894807,"y":0.07140136211717957,"z":0.1544801279834347,"stroke":1},{"x":-0.3072905228866718,"y":0.11499088556428669,"z":0.16465023996894035,"stroke":1},{"x":0.09886213765417495,"y":-0.03610246167911259,"z":-0.8353497600310597,"stroke":1}]]}');
   //trainer.fromJSON('');
 
   trainer.on('A', a);
-
-  trainer.on('I', i);
-  trainer.on('I2', i);
-
-  trainer.on('KU', ku);
-  
-  trainer.on('SI', si);
-  trainer.on('SI2', si);
-  
-  trainer.on('KO', ko);
-  trainer.on('KO2', ko);
+  trainer.on('NU', nu);
+  trainer.on('HA', ha);
+  trainer.on('E', e);
+  trainer.on('ME', me);
 });
