@@ -8,6 +8,7 @@ $(function() {
   //あ、い、え、そ、て、め、ぬ、は、お、む
   
   let stage = "あ";
+  let hide_btn_sw = 0;
 
   function a (evt) {
     if(stage == 'あ'){
@@ -103,6 +104,19 @@ $(function() {
     }else if(stage == 'む'){
       call_mu();
     }
+  });
+
+  //ボタン表示切り替え
+  $('.hide-ans').on('click', function(){
+    if(hide_btn_sw == 1){
+      $('.handsign_img').css('display','none');
+      $('.hide-ans').text('画像を表示');
+      hide_btn_sw = 0;
+    }else{
+      $('.handsign_img').css('display','inline');
+      $('.hide-ans').text('画像を隠す');
+      hide_btn_sw = 1;
+    };
   });
 
   function call_a(){
